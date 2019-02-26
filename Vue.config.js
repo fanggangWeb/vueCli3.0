@@ -1,8 +1,9 @@
 module.exports = {
     // 基本路径
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/'
-      : '/',
+    // publicPath: process.env.NODE_ENV === 'production'
+    //   ? './'
+    //   : './',
+    publicPath: './',
     // 输出文件目录
     outputDir: 'dist', // 默认dist
     // 用于嵌套生成的静态资产（js,css,img,fonts）目录
@@ -52,6 +53,7 @@ module.exports = {
     },
     // webpack-dev-server 相关配置
     devServer: {
+      // disableHostCheck: true,
       host: '0.0.0.0',
       port: 9191,
       https: false,
@@ -60,6 +62,7 @@ module.exports = {
       proxy: null, // 设置代理
       before: app => {},
     },
+    // runtimeCompiler: true,
     // PWA 插件相关配置
     pwa: {},
     // 第三方插件配置
