@@ -84,13 +84,11 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-  $bg:#2d3a4b;
   $dark_gray:#889aa4;
-  $light_gray:#eee;
   .login-container {
     width: 100%;
     height: 100%;
-    background-color: $bg;
+    background-color: #2d3a4b;
     input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px #293444 inset !important;
       -webkit-text-fill-color: #fff !important;
@@ -101,7 +99,7 @@
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
-      color: $light_gray;
+      color: #eee;
       height: 47px;
     }
     .el-input {
@@ -114,7 +112,7 @@
     .title {
       font-size: 26px;
       font-weight: 400;
-      color: $light_gray;
+      color: #eee;
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;
@@ -124,7 +122,6 @@
       top: calc(50% - 160px);
       left: calc(50% - 235px);
       width: 400px;
-      // padding: 35px 35px 15px 35px;
       margin: 0 auto;
     }
     .el-form-item {

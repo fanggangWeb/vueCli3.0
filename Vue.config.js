@@ -45,7 +45,7 @@ module.exports = {
       // 启用 CSS modules
       modules: false,
       // 是否使用css分离插件
-      extract: true,
+      // extract: true, // 此参数会导致编辑css过后，热加载失效
       // 开启 CSS source maps?
       sourceMap: false,
       // css预设器配置项
