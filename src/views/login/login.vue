@@ -47,7 +47,7 @@
 <script>
   import common from  "@/utils/common"
   const SUCCESS_OK = '200'
-  import { mapMutations } from 'vuex'
+  import { mapMutations, actions } from 'vuex'
   export default {
     name: "login",
     data() {
