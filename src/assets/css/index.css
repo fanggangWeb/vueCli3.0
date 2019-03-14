@@ -3,77 +3,174 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-html, body {
+
+html,
+body {
   width: 100%;
   height: 100%;
 }
+
 /* reset.css结束 */
-.bubble-hints{ 
+.bubble-hints {
   position: absolute;
-  top:-45px;
-  left:15%;
-  background:red;
+  top: -45px;
+  left: 15%;
+  background: red;
   padding: 2px 8px 4px 8px;
   border-radius: 8px;
   font-size: 16px;
   line-height: 25px;
   z-index: 9;
-  color:#fff;
+  color: #fff;
 }
-.bubble-hints em{
-  display:block;
-  border-width:8px;
-  position:absolute;
-  bottom:-16px;
-  left:30%;
-  border-style:solid dashed dashed;
-  border-color:red transparent transparent;
-  font-size:0;
-  line-height:0;
+
+.bubble-hints em {
+  display: block;
+  border-width: 8px;
+  position: absolute;
+  bottom: -16px;
+  left: 30%;
+  border-style: solid dashed dashed;
+  border-color: red transparent transparent;
+  font-size: 0;
+  line-height: 0;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* .bubble-hints span{
   display:block;
   border-width:10px;
@@ -84,3 +181,140 @@ html, body {
   border-color:#FFF transparent transparent;
   font-size:0;
   line-height:0;} */
+/* 公共样式 */
+.container {
+  width: 100%;
+  height: 100%;
+  background: #F1F2F5;
+}
+
+.top-bread {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 66px;
+}
+
+.top-bread .default .el-breadcrumb__inner {
+  color: #ababab;
+}
+
+.top-bread .text .el-breadcrumb__inner {
+  color: #467DEC;
+}
+
+/* 改变按钮的样式 */
+.el-button--primary.is-plain {
+  color: #467DEC;
+  background: white;
+  border-color: #467DEC;
+}
+
+.el-button--primary.is-plain:hover {
+  color: white;
+  background: #467DEC;
+  border-color: #467DEC;
+}
+
+.el-button--primary.is-plain:focus {
+  color: white;
+  background: #467DEC;
+  border-color: #467DEC;
+}
+
+.el-button--primary {
+  color: white;
+  background: #467DEC;
+  border-color: #467DEC;
+}
+
+.el-button--success {
+  color: white;
+  background: #51BBA5;
+  border-color: #51BBA5;
+}
+
+.el-button--success:focus {
+  color: white;
+  background: #51BBA5;
+  border-color: #51BBA5;
+}
+
+.el-button--success:hover {
+  color: white;
+  background: #3AC27E;
+  border-color: #3AC27E;
+}
+/* 自定义复用按钮 */
+.system-btn {
+  min-width: 84px;
+  height: 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.system-btn .icon {
+  width: 16px;
+  height: 16px;
+  background-size: 100% 100%;
+  margin-right: 4px;
+}
+.query-btn, .reset-btn {
+  background: #467DEC;
+}
+.query-btn .icon {
+  background-image: url("../image/queryicon.png");
+}
+.reset-btn .icon {
+  background-image: url("../image/reseticon.png");
+}
+.add-btn {
+  background: #51BBA5;
+}
+.add-btn .icon {
+  background-image: url("../image/addicon.png");
+}
+.export-btn {
+  background: #3AC27E;
+}
+.export-btn .icon {
+  background-image: url("../image/exporticon.png");
+}
+.tongji-btn, .history-btn {
+  background: #F29C1A;
+}
+.tongji-btn .icon{
+  background-image: url("../image/tongjiicon.png");
+}
+.history-btn .icon {
+  background-image: url("../image/historydelicon.png");
+}
+.choose-btn {
+  color: #467DEC;
+  border: 1px solid #467DEC;
+}
+.choose-btn.active {
+  color: white;
+  background: #467DEC;
+}
+/* 表单文字对齐方式 */
+.el-form-item__label {
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+}
+.el-dialog__title {
+  font-weight: bold;
+}
